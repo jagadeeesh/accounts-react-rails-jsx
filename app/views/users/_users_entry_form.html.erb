@@ -1,7 +1,7 @@
 <!-- Modal -->
 <div class="modal fade" id="userEntry" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content no-padding">
             <!-- Modal Header -->
             <div class="modal-header">
@@ -17,6 +17,7 @@
             <!-- Modal Body -->
                 <div class="modal-body">
                   <h2>Users list</h2>
+                  <%= react_component 'Users', { data: @users } %>
                 </div>
               <!-- Modal Footer -->
               <div class="modal-footer">
